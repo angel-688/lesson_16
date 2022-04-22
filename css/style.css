@@ -1,0 +1,461 @@
+@import "null.css";
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,600,700,900&display:swap;);
+
+/* ================================================================ */
+
+/* ================================================================ */
+body {
+   font-family: 'Roboto', sans-serif;
+   font-size: 14px;
+   background-color: #1A1A1A;
+   color: #FFFFFF;
+}
+
+/* ================================================================ */
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+   overflow: hidden;
+   padding: 50px 0px;
+   background: linear-gradient(120deg, rgba(255, 255, 255, 1) 47%, rgba(255, 139, 13, 1) 48%);
+}
+
+[class*="__container"] {
+   max-width: 1300px;
+   margin: 0px auto;
+}
+
+/* ================================================================ */
+.main__forms {}
+
+.forms {}
+
+.forms__container {}
+
+.forms__body {
+   display: flex;
+   flex-wrap: wrap;
+   row-gap: 25px;
+}
+
+.forms__column {
+   flex: 0 1 50%;
+}
+
+/* DOGGY =========================================================================================== */
+.forms__doggy {}
+
+.doggy {}
+
+.doggy__body {
+   max-width: 586px;
+   padding: 76px 58px;
+   background: #5D62B5;
+   border-radius: 40px;
+}
+
+.doggy__title {
+   text-align: center;
+   font-weight: 00;
+   font-size: 36px;
+   line-height: 1.16;
+   margin: 0px 0px 43px 0px;
+}
+
+.doggy__form {
+   text-align: right;
+}
+
+.form-doggy {}
+
+.form-doggy__body {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0px -12px 22px;
+   row-gap: 22px;
+}
+
+.form-doggy__input {
+   padding: 0px 12px;
+   flex: 1 1 50%;
+}
+
+.form-doggy__field,
+.form-doggy__select,
+.form-doggy__big-field {
+   width: 100%;
+   border: 2px solid #FFFFFF;
+   border-radius: 10px;
+   background-color: transparent;
+   padding: 0px 23px;
+   min-height: 57px;
+   outline: none;
+   color: #fff;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.15px;
+}
+
+.form-doggy__field:focus,
+.form-doggy__select:focus,
+.form-doggy__big-field:focus,
+.form-doggy__button:focus {
+   box-shadow: 1px 1px 15px #fff;
+}
+
+.form-doggy__field::placeholder {
+   color: rgba(255, 255, 255, 0.8);
+   transition: all 0.5s ease 0s;
+}
+
+.form-doggy__field:focus.form-doggy__field::placeholder {
+   transform: translate(-100%, 0%);
+}
+
+.form-doggy__big-field:focus.form-doggy__big-field::placeholder {
+   opacity: 0;
+}
+
+.form-doggy__big-field::placeholder {
+   color: rgba(255, 255, 255, 0.8);
+   transition: all 0.5s ease 0s;
+}
+
+.form-doggy__select {
+   appearance: none;
+   color: rgba(255, 255, 255, 0.8);
+   cursor: pointer;
+}
+
+.form-doggy__select option {
+   color: #000;
+}
+
+.form-doggy__textarea {}
+
+.form-doggy__textarea:not(:last-child) {
+   margin: 0px 0px 30px 0px;
+}
+
+.form-doggy__big-field {
+   padding: 17px 23px 0px 23px;
+   resize: vertical;
+   min-height: 180px;
+}
+
+.form-doggy__button {
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 2;
+   letter-spacing: 0.15px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   padding: 0px 35px;
+   min-height: 48px;
+   background: #F2726F;
+   border-radius: 8px;
+   cursor: pointer;
+   outline: none;
+   transition: background 0.3s ease 0s;
+}
+
+.form-doggy__button:hover {
+   background: #c83432;
+}
+
+/* TECH ========================================================================================*/
+.forms__tech {}
+
+.tech {
+   max-width: 446px;
+   background: #F5F7FF;
+   padding: 20px 30px;
+   color: #000000;
+}
+
+.tech__title {
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 1.5;
+}
+
+.tech__title:not(:last-child) {
+   margin: 0px 0px 18px 0px;
+}
+
+.tech__subtitle {
+   font-size: 18px;
+   line-height: 1.5;
+}
+
+.tech__subtitle:not(:last-child) {
+   margin: 0px 0px 12px 0px;
+}
+
+.tech__text {
+   font-size: 14px;
+   line-height: 1.5;
+   color: #666666;
+   max-width: 287px;
+}
+
+.tech__text:not(:last-child) {
+   margin: 0px 0px 12px 0px;
+}
+
+.tech__form {}
+
+.form-tech {}
+
+.form-tech__box {
+   margin: 0px 0px 17px 0px;
+}
+
+.form-tech__input {
+   display: flex;
+   flex-direction: column;
+}
+
+.form-tech__input:not(:last-child) {
+   margin: 0px 0px 5px 0px;
+}
+
+.form-tech__label,
+.form-tech__name {
+   font-weight: 600;
+   font-size: 13px;
+   line-height: 210%;
+   cursor: pointer;
+}
+
+.form-tech__field,
+.form-tech__select {
+   background: #FFFFFF;
+   border: 1px solid #A2A6B0;
+   border-radius: 4px;
+   min-height: 50px;
+   padding: 0px 17px 0px 17px;
+   width: 100%;
+   outline: none;
+   font-size: 14px;
+   line-height: 1.42;
+   color: #A2A6B0;
+}
+
+.form-tech__select {
+   appearance: none;
+   background: url('../img/arrow.svg') calc(100% - 17px) / 6px 5px no-repeat;
+   cursor: pointer;
+}
+
+.form-tech__field:focus,
+.form-tech__select:focus {
+   border: 2px solid rgb(53, 53, 230);
+}
+
+.form-tech__field::placeholder {
+   color: #A2A6B0;
+}
+
+.form-tech__radio {
+   position: relative;
+}
+
+.form-tech__radio:not(:last-child) {
+   margin: 0px 0px 29px 0px;
+}
+
+.form-tech__name {}
+
+.input {
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0;
+}
+
+.input:focus + .form-tech__label-radio {
+   outline: 2px solid #0156FF;
+}
+
+.input:checked + .form-tech__label-radio::after {
+   transform: scale(1);
+}
+
+.form-tech__label-radio {
+   display: flex;
+   position: relative;
+   /* padding: 0px 0px 0px 29px; */
+   font-size: 14px;
+   line-height: 1.42;
+   align-items: center;
+   column-gap: 8px;
+   cursor: pointer;
+}
+
+
+.form-tech__label-radio::after {
+   content: "";
+   position: absolute;
+   top: 4px;
+   left: 4px;
+   width: 13px;
+   height: 13px;
+   border-radius: 50%;
+   background-color: #0156FF;
+   transform: scale(0);
+   transition: transform 0.3s ease 0s;
+}
+
+.form-tech__label-radio::before {
+   content: "";
+   flex: 0 0 21px;
+   height: 21px;
+   border-radius: 50%;
+   background-color: #fff;
+   border: 2px solid #0156FF;
+   align-self: flex-start;
+}
+
+
+.form-techh__name {}
+
+.form-tech__subtitle {
+   font-size: 18px;
+   line-height: 1.5;
+}
+
+.form-tech__subtitle:not(:last-child) {
+   margin: 0px 0px 5px 0px;
+}
+
+.form-tech__button {
+   margin: 19px 0px 0px 0px;
+   display: inline-block;
+   width: 100%;
+   min-height: 50px;
+   background-color: transparent;
+   border: 2px solid #0156FF;
+   border-radius: 50px;
+   color: #0156FF;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 1.5;
+   text-align: center;
+   cursor: pointer;
+   transition: background 0.3s ease 0s;
+}
+
+.form-tech__button span {
+   transition: color 0.3s ease 0s;
+}
+
+.form-tech__button:hover {
+   background-color: #0156FF;
+}
+
+.form-tech__button:hover span {
+   color: #fff;
+}
+
+/* AUTHORIZATION =========================================================================================== */
+.forms__authorization {}
+
+.authorization {}
+
+.authorization__body {
+   max-width: 564px;
+   background: #F5F7FF;
+   padding: 37px 58px;
+   color: #000;
+}
+
+.authorization__title {
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 1.5;
+}
+
+.authorization__text {
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 2.1;
+}
+
+.authorization__form {}
+
+
+.authorization__box {
+   margin: 0px 0px 30px 0px;
+}
+
+.authorization__input {
+   display: flex;
+   flex-direction: column;
+}
+
+.authorization__label {
+   font-weight: 600;
+   font-size: 13px;
+   line-height: 210%;
+}
+
+.authorization__label span {
+   color: red;
+}
+
+.authorization__field {
+   width: 100%;
+   background: #FFFFFF;
+   border: 1px solid #A2A6B0;
+   border-radius: 4px;
+   min-height: 50px;
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 1.42;
+   padding: 0px 17px;
+}
+
+.authorization__field::placeholder {
+   color: #A2A6B0;
+   transition: transform 0.3s ease 0s;
+}
+
+.authorization__field:focus.authorization__field::placeholder {
+   transform: translate(0%, -200%);
+}
+
+.authorization__button-block {
+   display: flex;
+   align-items: center;
+   column-gap: 23px;
+}
+
+.authorization__button {
+   text-align: center;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 1.5;
+   color: #fff;
+   padding: 0px 50px;
+   min-height: 50px;
+   background: #0156FF;
+   border-radius: 50px;
+   cursor: pointer;
+   transition: background 0.3s ease 0s;
+}
+
+.authorization__button:hover {
+   background: #0d378b;
+}
+
+.authorization__forgot {
+   font-size: 14px;
+   line-height: 1.42;
+   color: #0156FF;
+}
+
+.authorization__forgot:hover {
+   text-decoration: underline;
+}
