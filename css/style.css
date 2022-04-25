@@ -142,6 +142,7 @@ body {
    padding: 17px 23px 0px 23px;
    resize: vertical;
    min-height: 180px;
+   max-height: 450px;
 }
 
 .form-doggy__button {
